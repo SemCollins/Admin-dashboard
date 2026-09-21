@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#14161D" />
+  <meta name="description"
+    content="TAMVA — Institutional Financial Identity, Risk Intelligence & Trust Operations Platform" />
+  <title>TAMVA — Trust &amp; Risk Operations Console</title>
+
+  <script>
+    (function () {
+      try {
+        const storedTheme = localStorage.getItem("tamva-theme");
+        const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (storedTheme === "dark" || (!storedTheme && systemDark) || storedTheme === "system" && systemDark) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+
+<body class="bg-[var(--bg-canvas)] text-[var(--text-primary)] antialiased selection:bg-[var(--accent-gold)] selection:text-black">
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+# Copy to CODEOWNERS and replace team placeholders with real GitHub teams.
+/apps/backend/domains/identity/ @your-org/identity-team
+/apps/backend/domains/partner/ @your-org/platform-team
+/apps/backend/domains/ledger/ @your-org/ledger-team
+/apps/backend/domains/risk/ @your-org/risk-team
+/apps/backend/config/ @your-org/platform-team
+/apps/backend/packages/ @your-org/platform-team
+/packages/contracts/ @your-org/platform-team
+/.github/ @your-org/platform-team

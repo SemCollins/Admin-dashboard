@@ -1,0 +1,7 @@
+packages:
+  - apps/admin
+  - apps/mobile
+  - packages/contracts/client
+  - packages/brand
+allowBuilds:
+  unrs-resolver: true

@@ -1,0 +1,16 @@
+{
+  "name": "tamva-workspace",
+  "private": true,
+  "scripts": {
+    "build": "pnpm --filter @tamva/admin build",
+    "dev:admin": "pnpm --filter @tamva/admin dev",
+    "dev:mobile": "pnpm --filter @tamva/mobile start",
+    "lint": "pnpm -r --if-present lint",
+    "test": "pnpm --filter @tamva/admin test",
+    "typecheck": "pnpm -r --if-present typecheck"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@11.9.0"
+}
